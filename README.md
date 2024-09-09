@@ -1,3 +1,81 @@
+# Team 12: Fitness App Project
+
+## Project Description
+This is a React Native project aimed at building a fitness app that allows users to track their workouts and manage exercises. Users can view exercises by the day of the week, leave comments, filter exercises by equipment, and track repetitions and weights. Additionally, the app allows users to browse exercises by category and view basic details, including images and targeted muscles.
+
+### User Stories
+- **Peter Mitchell**:
+  - View exercises by day of the week to plan workouts.
+    - **API**: `daysofweek`
+  - Leave and read comments on exercises to share feedback.
+    - **API**: `exercisecomment`
+  - Search for exercises by name.
+    - **API**: `exercise`, `exercisealias`
+- **Alvaro De La Cruz**:
+  - Filter exercises by available equipment.
+    - **API**: `equipment`
+  - Track repetitions and weights for each exercise.
+    - **API**: `setting-repetitionunit`, `setting-weightunit`
+  - Access exercise variations.
+    - **API**: `variation`
+- **Erik Govea-Lopez**:
+  - Browse exercises by category.
+    - **API**: `exercisecategory`
+  - View basic details of exercises, including name, category, and targeted muscles.
+    - **API**: `exercisebaseinfo`
+  - Search for exercises that target specific muscles.
+    - **API**: `muscle`
+- **Saniya Wairkar**:
+  - View images of exercises to see how they should be performed.
+    - **API**: `exerciseimage`
+  - View nutritional information for ingredients.
+    - **API**: `ingredient`, `ingredientinfo`
+  - Convert ingredient measurements to different weight units.
+    - **API**: `ingredienttoweightunit`, `weightunit`
+
+
+## GitHub Repository
+- **Repository Link**: [https://github.com/saniyaw7/Project1SE](https://github.com/saniyaw7/Project1SE)
+
+## GitHub Issues
+We are actively using GitHub issues to track and assign tasks. Each team member has been assigned specific user stories and has been contributing to resolving issues.
+
+## Libraries Used
+- [React Native](https://reactnative.dev) - Main framework for building the app.
+- [React Navigation](https://reactnavigation.org) - Navigation library for managing app screens.
+- [Axios](https://github.com/axios/axios) - For API calls to the backend.
+- [Redux](https://redux.js.org/) - State management for the app.
+- [React Native Paper](https://callstack.github.io/react-native-paper/) - UI component library.
+
+## Contributors
+| Name               | GitHub Profile                             |
+|--------------------|--------------------------------------------|
+| **Peter Mitchell**  | [Peter's GitHub](https://github.com/Mitpete) |
+| **Alvaro De La Cruz** | [Alvaro's GitHub](https://github.com/Alvaro-DLC) |
+| **Erik Govea-Lopez** | [Erik's GitHub](https://github.com/erikgovea) |
+| **Saniya Wairkar**   | [Saniya's GitHub](https://github.com/saniyaw7) |
+
+---
+
+# Getting Started
+
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till the "Creating a new application" step, before proceeding.
+
+## Step 1: Start the Metro Server
+
+First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+
+To start Metro, run the following command from the _root_ of your React Native project:
+
+```bash
+# using npm
+npm start
+
+# OR using Yarn
+yarn start
+
+
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
