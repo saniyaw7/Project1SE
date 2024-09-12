@@ -9,10 +9,22 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-community/checkbox": "^0.5.17",
+    "@react-navigation/native": "^6.1.18",
+    "@react-navigation/native-stack": "^6.11.0",
+    "axios": "^1.7.7",
     "expo": "~51.0.28",
+    "expo-checkbox": "~3.0.0",
+    "expo-document-picker": "~12.0.2",
+    "expo-file-system": "~17.0.1",
+    "expo-sharing": "~12.0.1",
+    "expo-sqlite": "~14.0.6",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react-native": "0.74.5",
+    "react-native-element-dropdown": "^2.12.1",
+    "react-native-render-html": "^6.3.4",
+    "write-file-atomic": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

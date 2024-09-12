@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="368efe39-5919-4c17-82b2-c55cd98eb186" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/EquipmentScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/ExercisesScreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/acorn" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/acorn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/browserslist" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/browserslist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/envinfo" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/envinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esparse" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esparse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/esvalidate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/esvalidate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/fxparser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/fxparser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/image-size" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/image-size" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/is-docker" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/is-docker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/js-yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/js-yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jscodeshift" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jscodeshift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/json5" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/json5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/logkitty" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/logkitty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/loose-envify" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/loose-envify" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/metro" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/metro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/metro-symbolicate" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/metro-symbolicate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/mkdirp" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/mkdirp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/node-which" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/node-which" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/parser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/parser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/print-chrome-path" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/print-chrome-path" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/react-native" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/react-native" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/regjsparser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/regjsparser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/resolve" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/resolve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/rnc-cli" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/rnc-cli" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/terser" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/terser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/update-browserslist-db" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/update-browserslist-db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.bin/yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/types/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/types/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/types/build/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/types/build/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/types/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/types/build/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@jest/types/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@jest/types/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-doctor/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@react-native-community/cli-doctor/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Circus.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Circus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Config.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/TestResult.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/TestResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Transform.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/Transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/build/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@jest/types/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@types/yargs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@types/yargs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@types/yargs/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@types/yargs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/@types/yargs/yargs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/ansi-styles/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/ansi-styles/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/ansi-styles/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/ansi-styles/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/ansi-styles/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/source/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/source/templates.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/chalk/source/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/conversions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-convert/route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-name/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-name/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-name/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/color-name/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/has-flag/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/has-flag/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/has-flag/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/has-flag/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/has-flag/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/collections.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/collections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/AsymmetricMatcher.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/AsymmetricMatcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/ConvertAnsi.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/ConvertAnsi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/DOMCollection.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/DOMCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/DOMElement.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/DOMElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/Immutable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/Immutable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/ReactElement.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/ReactElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/ReactTestComponent.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/ReactTestComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/lib/escapeHTML.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/lib/escapeHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/lib/markup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/plugins/lib/markup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/build/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/pretty-format/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/build-info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/cjs/react-is.development.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/cjs/react-is.production.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/umd/react-is.development.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/react-is/umd/react-is.production.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/supports-color/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/supports-color/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/supports-color/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/supports-color/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-server-api/node_modules/supports-color/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli-tools/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@react-native-community/cli-tools/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@react-native-community/cli/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@react-native-community/cli/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/istanbul-reports/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/istanbul-reports/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/istanbul-reports/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/istanbul-reports/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/istanbul-reports/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/istanbul-reports/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/yargs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/yargs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/yargs/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/yargs/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/yargs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/yargs/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/yargs/yargs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/yargs/yargs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/agents.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/agents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/url-scroll-to-text-fragment.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/data/features/url-scroll-to-text-fragment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/caniuse-lite/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chrome-launcher/node_modules/escape-string-regexp/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chrome-launcher/node_modules/escape-string-regexp/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chrome-launcher/node_modules/escape-string-regexp/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chrome-launcher/node_modules/escape-string-regexp/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/chrome-launcher/node_modules/escape-string-regexp/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-chromium-versions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/full-versions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/electron-to-chromium/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/electron-to-chromium/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escape-string-regexp/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/license" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escape-string-regexp/license" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escape-string-regexp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/escape-string-regexp/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/escape-string-regexp/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/make-dir/node_modules/.bin/semver" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/collections.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/collections.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/AsymmetricMatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/AsymmetricMatcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/DOMCollection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/DOMCollection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/DOMElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/DOMElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/Immutable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/Immutable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/ReactElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/ReactElement.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/ReactTestComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/build/plugins/ReactTestComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/pretty-format/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pretty-format/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Circus.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Circus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Config.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Global.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/TestResult.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/TestResult.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Transform.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/Transform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/build/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@jest/types/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@types/yargs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@types/yargs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@types/yargs/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@types/yargs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/@types/yargs/yargs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/collections.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/collections.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/AsymmetricMatcher.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/AsymmetricMatcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/ConvertAnsi.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/ConvertAnsi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/DOMCollection.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/DOMCollection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/DOMElement.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/DOMElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/Immutable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/Immutable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/ReactElement.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/ReactElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/ReactTestComponent.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/ReactTestComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/lib/escapeHTML.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/lib/escapeHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/lib/markup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/plugins/lib/markup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/build/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/pretty-format/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/build-info.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/cjs/react-is.development.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/cjs/react-is.production.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/umd/react-is.development.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/react-native/node_modules/react-is/umd/react-is.production.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/regjsparser/node_modules/.bin/jsesc" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regjsparser/node_modules/.bin/jsesc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/send/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/serve-static/HISTORY.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/serve-static/HISTORY.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/serve-static/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/serve-static/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/serve-static/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/serve-static/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/temp/node_modules/.bin/rimraf" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/temp/node_modules/.bin/rimraf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/dist/bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/dist/bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/compress/evaluate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/compress/evaluate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/lib/mozilla-ast.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/lib/mozilla-ast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/terser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/terser/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/write-file-atomic/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/write-file-atomic/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/write-file-atomic/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/write-file-atomic/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2lo51EZVB7YHTvMaasE1zR4KGPI" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Alvaro&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/slime/GitHub/Project1SE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slime\GitHub\Project1SE\screens" />
+      <recent name="C:\Users\slime\GitHub\Project1SE" />
+      <recent name="C:\Users\slime\GitHub\Project1SE\node_modules" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="368efe39-5919-4c17-82b2-c55cd98eb186" name="Changes" comment="" />
+      <created>1725833371914</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725833371914</updated>
+    </task>
+    <servers />
+  </component>
+</project>
