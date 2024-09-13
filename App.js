@@ -1,12 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, Button, Pressabl } from 'react-native';
+import { StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import * as SQLite from 'expo-sqlite';
-import {useState, useEffect } from 'react';
-import HomeScreen from './screens/HomeScreen';
-import ExercisesScreen from './screens/ExercisesScreen';
-import EquipmentScreen from './screens/EquipmentScreen';
+import HomeScreen from './components/HomeScreen';
+import ExercisesScreen from './components/ExercisesScreen';
+import EquipmentScreen from './components/EquipmentScreen';
 
 const Stack =  createNativeStackNavigator();
 

@@ -1,36 +1,17 @@
-import React, {useEffect, useState} from 'react';
+/*
+This screen shows the exercises that use the equipment chosen by the user in EquipmentScreen
+*/
+import React, { useState, isLoading } from 'react';
 import { Button, StyleSheet, Text, View, ActivityIndicator, FlatList, useWindowDimensions  } from 'react-native';
 import CheckBox from 'expo-checkbox';
 import RenderHtml from 'react-native-render-html';
+import useFetchData from './RestApi';
 
 const ExercisesScreen = ({route, navigation}) => {
   const { itemId } = route.params;
-  const [isLoading, setLoading] = useState(true);
+  const {data} = useFetchData('exercise',`equipment=${itemId}`);
   const [selectedItems, setSelectedItems] = useState({});
-  const [data, setData] = useState([]);
-  const [value, setValue] = useState(null);
-  const API_KEY = '966ac55de3c816f715d15d864b887dcebf0f2626';
   const { width } = useWindowDimensions();
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    try{
-      const response = await fetch('https:/wger.de/api/v2/exercise/?language=2&limit=999&equipment='+itemId,{
-        headers:{
-          'Authorization':`Token ${API_KEY}`
-        }
-      });
-      const result = await response.json();
-      setData(result.results);
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setLoading(false);
-      }
-  }
 
   const handleCheckBoxChange = (id) => {
     setSelectedItems((prevSelectedItems) => ({
@@ -56,8 +37,8 @@ const ExercisesScreen = ({route, navigation}) => {
             <View style={styles.container}>
                 <View style={styles.itemContainer}>
                     <CheckBox
-                        value={selectedItems[item.id] || false}
-                        onValueChange={() => handleCheckBoxChange(item.id)}
+                        value={selectedItems[item.uuid] || false}
+                        onValueChange={() => handleCheckBoxChange(item.uuid)}
                     />
                     <Text style={styles.itemName}>{item.name}</Text>
                 </View>
@@ -69,7 +50,7 @@ const ExercisesScreen = ({route, navigation}) => {
                 </View>
               </View>
           )}
-          />
+        />
       )}
 
       <Text>Save</Text>
@@ -89,6 +70,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    borderBottomWidth: 5,
+    borderBottomColor: '#ccc',
   },
   itemContainer: {
     flexDirection: 'row',
