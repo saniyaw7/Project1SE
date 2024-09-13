@@ -1,6 +1,6 @@
 import { Button, StyleSheet, Text, View } from 'react-native'
 
-const HomeScreen = ({navigation}) => {
+const TestHomeScreen = ({navigation}) => {
     return (
         <View style={styles.container}>
             <Text>Welcome</Text>
@@ -12,7 +12,7 @@ const HomeScreen = ({navigation}) => {
     )
 }
 
-export default HomeScreen
+export default TestHomeScreen
 
 const styles = StyleSheet.create({
     container: {

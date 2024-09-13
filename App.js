@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './components/HomeScreen';
+import TestHomeScreen from './components/TestHomeScreen';
 import ExercisesScreen from './components/ExercisesScreen';
 import EquipmentScreen from './components/EquipmentScreen';
 
@@ -14,8 +14,8 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name='Home'
-          component={HomeScreen}
+          name='TestHome'
+          component={TestHomeScreen}
         />
         <Stack.Screen
           name='Equipment'

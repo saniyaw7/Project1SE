@@ -26,7 +26,7 @@ const EquipmentScreen = ({navigation}) => {
     <View style={styles.container}>
       <View style={styles.dropdownContainer}>
         <Text>
-          Filter Exercises By:
+          Filter Exercises By Equipment:
         </Text>
         <Dropdown
           style={styles.dropdown}
