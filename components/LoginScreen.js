@@ -1,6 +1,8 @@
 // components/LoginScreen.js
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, Alert } from 'react-native';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 import WelcomeMessage from './WelcomeMessage';
 import Logo from './Logo';
 
@@ -9,8 +11,17 @@ const LoginScreen = ({ navigation }) => {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Add your login logic here
-    console.log('Login with:', email, password);
+    signInWithEmailAndPassword(auth, email, password)
+      .then(userCredential => {
+        // Signed in
+        const user = userCredential.user;
+        Alert.alert('Success', 'Logged in successfully!');
+        console.log('Logged in with:', user.email);
+      })
+      .catch(error => {
+        const errorMessage = error.message;
+        Alert.alert('Login Failed', errorMessage);
+      });
   };
 
   return (

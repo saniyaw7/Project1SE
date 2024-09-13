@@ -1,6 +1,8 @@
 // components/RegisterScreen.js
 import React, { useState } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, View, TextInput, TouchableOpacity, Text, Alert } from 'react-native';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 import WelcomeMessage from './WelcomeMessage';
 import Logo from './Logo';
 
@@ -9,9 +11,17 @@ const RegisterScreen = ({ navigation }) => {
   const [password, setPassword] = useState('');
 
   const handleRegister = () => {
-    // Add your registration logic here
-    console.log('Register with:', email, password);
-    navigation.navigate('Login');
+    createUserWithEmailAndPassword(auth, email, password)
+      .then(userCredential => {
+        const user = userCredential.user;
+        Alert.alert('Success', 'Registered successfully!');
+        console.log('Registered with:', user.email);
+        navigation.navigate('Login');
+      })
+      .catch(error => {
+        const errorMessage = error.message;
+        Alert.alert('Registration Failed', errorMessage);
+      });
   };
 
   return (
