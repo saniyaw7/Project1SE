@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     height: 150,
     borderRadius: 75,
     marginBottom: 40,
-     marginTop: 40, // Add marginTop to bring the logo down
+    marginTop: 40,
     borderWidth: 3,
     borderColor: '#27ae60',
   },

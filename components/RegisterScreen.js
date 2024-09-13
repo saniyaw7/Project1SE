@@ -1,16 +1,17 @@
-// components/LoginScreen.js
+// components/RegisterScreen.js
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
 import WelcomeMessage from './WelcomeMessage';
 import Logo from './Logo';
 
-const LoginScreen = ({ navigation }) => {
+const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    // Add your login logic here
-    console.log('Login with:', email, password);
+  const handleRegister = () => {
+    // Add your registration logic here
+    console.log('Register with:', email, password);
+    navigation.navigate('Login');
   };
 
   return (
@@ -34,12 +35,12 @@ const LoginScreen = ({ navigation }) => {
         secureTextEntry
       />
 
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Login</Text>
+      <TouchableOpacity style={styles.button} onPress={handleRegister}>
+        <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.registerButton} onPress={() => navigation.navigate('Register')}>
-        <Text style={styles.registerButtonText}>Don't have an account? Register</Text>
+      <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.loginButtonText}>Already have an account? Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -79,13 +80,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  registerButton: {
+  loginButton: {
     marginTop: 15,
   },
-  registerButtonText: {
+  loginButtonText: {
     color: '#2980B9',
     fontSize: 14,
   },
 });
 
-export default LoginScreen;
+export default RegisterScreen;
