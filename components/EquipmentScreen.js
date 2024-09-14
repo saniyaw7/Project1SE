@@ -16,7 +16,7 @@ const EquipmentScreen = ({navigation}) => {
 
   const handleNavigate = () => {
       if (value) {
-        navigation.navigate('Exercises', { itemId: value });
+        navigation.navigate('ExercisesScreen', { itemId: value });
       } else {
         console.log('No item selected');
       }

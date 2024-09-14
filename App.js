@@ -1,40 +1,39 @@
 import { StatusBar } from 'expo-status-bar';
+import 'react-native-gesture-handler';
 import { StyleSheet} from 'react-native';
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
+import LoginScreen from './components/LoginScreen';
+import RegisterScreen from './components/RegisterScreen';
+import HomeScreen from './components/HomeScreen';
+import ExerciseSelection from './components/ExerciseSelection';
+import ScheduleExercise from './components/ScheduleExercise';
+import IngredientSearch from './components/IngredientSearch';
+import IngredientDetail from './components/IngredientDetail';
 import TestHomeScreen from './components/TestHomeScreen';
 import ExercisesScreen from './components/ExercisesScreen';
 import EquipmentScreen from './components/EquipmentScreen';
 
-const Stack =  createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
-
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name='TestHome'
-          component={TestHomeScreen}
-        />
-        <Stack.Screen
-          name='Equipment'
-          component={EquipmentScreen}
-        />
-        <Stack.Screen
-          name='Exercises'
-          component={ExercisesScreen}
-        />
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="ExerciseSelection"component={ExerciseSelection} />
+        <Stack.Screen name="ScheduleExercise" component={ScheduleExercise} />
+        <Stack.Screen name="IngredientSearch" component={IngredientSearch} />
+        <Stack.Screen name="IngredientDetail" component={IngredientDetail} />
+        <Stack.Screen name="TestHomeScreen"   component={TestHomeScreen}  /> 
+        <Stack.Screen name="EquipmentScreen"  component={EquipmentScreen}/>
+        <Stack.Screen name="ExercisesScreen"  component={ExercisesScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+

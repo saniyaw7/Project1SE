@@ -6,7 +6,7 @@ const TestHomeScreen = ({navigation}) => {
             <Text>Welcome</Text>
             <Button 
                 title='Search By Equipment'
-                onPress={() => navigation.navigate("Equipment")}
+                onPress={() => navigation.navigate("EquipmentScreen")}
             />
         </View>
     )

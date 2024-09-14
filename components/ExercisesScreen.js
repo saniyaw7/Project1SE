@@ -56,7 +56,7 @@ const ExercisesScreen = ({route, navigation}) => {
       <Text>Save</Text>
       <Button
         title='Save'
-        onPress={() => navigation.navigate("TestHome")}
+        onPress={() => navigation.navigate("TestHomeScreen")}
       />
     </View>
     )
