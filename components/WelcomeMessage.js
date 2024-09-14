@@ -8,16 +8,16 @@ const WelcomeMessage = () => {
 
 const styles = StyleSheet.create({
   message: {
-    fontSize: 24, // Slightly smaller font size for sleekness
+    fontSize: 24,
     color: '#27ae60',
     marginBottom: 20,
-    marginTop: 40, // Add marginTop to bring the logo down
-    fontWeight: '600', // Use a lighter font weight
-    textAlign: 'center', // Center the text
-    textShadowColor: 'rgba(0, 0, 0, 0.1)', // Subtle shadow color
-    textShadowOffset: { width: 0, height: 1 }, // Define the shadow offset
-    textShadowRadius: 1, // Define the shadow radius
-    letterSpacing: 0.5, // Refined letter spacing
+    marginTop: 40,
+    fontWeight: '600',
+    textAlign: 'center',
+    textShadowColor: 'rgba(0, 0, 0, 0.1)',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 1,
+    letterSpacing: 0.5,
   },
 });
 

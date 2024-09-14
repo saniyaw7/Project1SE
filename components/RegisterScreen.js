@@ -1,26 +1,26 @@
-// components/LoginScreen.js
+// components/RegisterScreen.js
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, Alert } from 'react-native';
-import { signInWithEmailAndPassword } from 'firebase/auth';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../firebaseConfig';
 import WelcomeMessage from './WelcomeMessage';
 import Logo from './Logo';
 
-const LoginScreen = ({ navigation }) => {
+const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    signInWithEmailAndPassword(auth, email, password)
+  const handleRegister = () => {
+    createUserWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
-        // Signed in
         const user = userCredential.user;
-        Alert.alert('Success', 'Logged in successfully!');
-        console.log('Logged in with:', user.email);
+        Alert.alert('Success', 'Registered successfully!');
+        console.log('Registered with:', user.email);
+        navigation.navigate('Login');
       })
       .catch(error => {
         const errorMessage = error.message;
-        Alert.alert('Login Failed', errorMessage);
+        Alert.alert('Registration Failed', errorMessage);
       });
   };
 
@@ -45,12 +45,12 @@ const LoginScreen = ({ navigation }) => {
         secureTextEntry
       />
 
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
-        <Text style={styles.buttonText}>Login</Text>
+      <TouchableOpacity style={styles.button} onPress={handleRegister}>
+        <Text style={styles.buttonText}>Register</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.registerButton} onPress={() => navigation.navigate('Register')}>
-        <Text style={styles.registerButtonText}>Don't have an account? Register</Text>
+      <TouchableOpacity style={styles.loginButton} onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.loginButtonText}>Already have an account? Login</Text>
       </TouchableOpacity>
     </View>
   );
@@ -90,13 +90,13 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
-  registerButton: {
+  loginButton: {
     marginTop: 15,
   },
-  registerButtonText: {
+  loginButtonText: {
     color: '#2980B9',
     fontSize: 14,
   },
 });
 
-export default LoginScreen;
+export default RegisterScreen;

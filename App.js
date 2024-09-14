@@ -1,34 +1,25 @@
 
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import 'react-native-gesture-handler';
+
 import React from 'react';
-import WelcomeMessage from './components/WelcomeMessage'; // Import WelcomeMessage component
-import Logo from './components/Logo'; // Import Logo component
-import LoginScreen from './components/LoginScreen'; // Import LoginScreen component
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import LoginScreen from './components/LoginScreen';
+import RegisterScreen from './components/RegisterScreen';
+
+// Import Firebase configuration
+import { auth } from './firebaseConfig';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      {/* Welcome Message */}
-      <WelcomeMessage />
-
-      {/* Circular FitLife Hub Logo */}
-      <Logo />
-
-      {/* Login Section */}
-      <LoginScreen />
-
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={RegisterScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f7f7f7',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 20,
-  },
-});
