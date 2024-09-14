@@ -1,3 +1,4 @@
+// components/LoginScreen.js
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, Alert } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -14,7 +15,8 @@ const LoginScreen = ({ navigation }) => {
       .then(userCredential => {
         const user = userCredential.user;
         Alert.alert('Success', 'Logged in successfully!');
-        navigation.navigate('ExerciseSelection'); // Navigate to ExerciseSelection
+        console.log('Logged in with:', user.email);
+        navigation.navigate('Home');  // Navigate to HomeScreen after login
       })
       .catch(error => {
         const errorMessage = error.message;
@@ -42,11 +44,9 @@ const LoginScreen = ({ navigation }) => {
         onChangeText={setPassword}
         secureTextEntry
       />
-
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
-
       <TouchableOpacity style={styles.registerButton} onPress={() => navigation.navigate('Register')}>
         <Text style={styles.registerButtonText}>Don't have an account? Register</Text>
       </TouchableOpacity>

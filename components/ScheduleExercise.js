@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, TouchableOpacity, Alert } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
-import RNPickerSelect from 'react-native-picker-select';
 
 const ScheduleExercise = ({ route, navigation }) => {
   const { exercise } = route.params; // Get selected exercise from params
   const [date, setDate] = useState(new Date());
+  const [time, setTime] = useState(new Date());
   const [showDatePicker, setShowDatePicker] = useState(false);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [showTimePicker, setShowTimePicker] = useState(false);
 
   const handleDateChange = (event, selectedDate) => {
     const currentDate = selectedDate || date;
@@ -15,34 +15,23 @@ const ScheduleExercise = ({ route, navigation }) => {
     setDate(currentDate);
   };
 
+  const handleTimeChange = (event, selectedTime) => {
+    const currentTime = selectedTime || time;
+    setShowTimePicker(false);
+    setTime(currentTime);
+  };
+
   const handleSchedule = () => {
-    if (!selectedDay) {
-      Alert.alert('Error', 'Please select a day.');
-    } else {
-      Alert.alert('Success', `Exercise scheduled for ${exercise.name} on ${selectedDay}`);
-      navigation.goBack(); // Go back to the previous screen after scheduling
-    }
+    Alert.alert(
+      'Success',
+      `Exercise scheduled for ${exercise.name} on ${date.toDateString()} at ${time.toLocaleTimeString()}`,
+    );
+    navigation.goBack(); // Go back to the previous screen after scheduling
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Schedule {exercise.name}</Text>
-
-      <Text style={styles.label}>Choose a day:</Text>
-      <RNPickerSelect
-        onValueChange={(value) => setSelectedDay(value)}
-        items={[
-          { label: 'Monday', value: 'Monday' },
-          { label: 'Tuesday', value: 'Tuesday' },
-          { label: 'Wednesday', value: 'Wednesday' },
-          { label: 'Thursday', value: 'Thursday' },
-          { label: 'Friday', value: 'Friday' },
-          { label: 'Saturday', value: 'Saturday' },
-          { label: 'Sunday', value: 'Sunday' },
-        ]}
-        placeholder={{ label: "Select a day", value: null }}
-        style={pickerSelectStyles}
-      />
 
       <TouchableOpacity onPress={() => setShowDatePicker(true)} style={styles.dateButton}>
         <Text style={styles.dateButtonText}>
@@ -56,6 +45,21 @@ const ScheduleExercise = ({ route, navigation }) => {
           mode="date"
           display="default"
           onChange={handleDateChange}
+        />
+      )}
+
+      <TouchableOpacity onPress={() => setShowTimePicker(true)} style={styles.timeButton}>
+        <Text style={styles.timeButtonText}>
+          {time ? time.toLocaleTimeString() : 'Select a time'}
+        </Text>
+      </TouchableOpacity>
+
+      {showTimePicker && (
+        <DateTimePicker
+          value={time}
+          mode="time"
+          display="default"
+          onChange={handleTimeChange}
         />
       )}
 
@@ -80,11 +84,6 @@ const styles = StyleSheet.create({
     color: '#27ae60',
     marginBottom: 20,
   },
-  label: {
-    fontSize: 18,
-    color: '#333',
-    marginBottom: 10,
-  },
   dateButton: {
     backgroundColor: '#fff',
     borderColor: 'gray',
@@ -94,6 +93,18 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   dateButtonText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  timeButton: {
+    backgroundColor: '#fff',
+    borderColor: 'gray',
+    borderWidth: 1,
+    borderRadius: 8,
+    padding: 15,
+    marginBottom: 20,
+  },
+  timeButtonText: {
     fontSize: 16,
     color: '#333',
   },
@@ -109,32 +120,5 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-
-const pickerSelectStyles = {
-  inputIOS: {
-    fontSize: 16,
-    paddingVertical: 12,
-    paddingHorizontal: 10,
-    borderWidth: 1,
-    borderColor: 'gray',
-    borderRadius: 8,
-    color: 'black',
-    paddingRight: 30,
-    backgroundColor: '#fff',
-    marginBottom: 20,
-  },
-  inputAndroid: {
-    fontSize: 16,
-    paddingHorizontal: 10,
-    paddingVertical: 8,
-    borderWidth: 1,
-    borderColor: 'gray',
-    borderRadius: 8,
-    color: 'black',
-    paddingRight: 30,
-    backgroundColor: '#fff',
-    marginBottom: 20,
-  },
-};
 
 export default ScheduleExercise;
