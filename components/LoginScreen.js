@@ -13,10 +13,10 @@ const LoginScreen = ({ navigation }) => {
   const handleLogin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
-        // Signed in
         const user = userCredential.user;
         Alert.alert('Success', 'Logged in successfully!');
         console.log('Logged in with:', user.email);
+        navigation.navigate('Home');  // Navigate to HomeScreen after login
       })
       .catch(error => {
         const errorMessage = error.message;
@@ -44,11 +44,9 @@ const LoginScreen = ({ navigation }) => {
         onChangeText={setPassword}
         secureTextEntry
       />
-
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
-
       <TouchableOpacity style={styles.registerButton} onPress={() => navigation.navigate('Register')}>
         <Text style={styles.registerButtonText}>Don't have an account? Register</Text>
       </TouchableOpacity>
