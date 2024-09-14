@@ -1,4 +1,3 @@
-// components/LoginScreen.js
 import React, { useState } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text, Alert } from 'react-native';
 import { signInWithEmailAndPassword } from 'firebase/auth';
@@ -13,10 +12,9 @@ const LoginScreen = ({ navigation }) => {
   const handleLogin = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then(userCredential => {
-        // Signed in
         const user = userCredential.user;
         Alert.alert('Success', 'Logged in successfully!');
-        console.log('Logged in with:', user.email);
+        navigation.navigate('ExerciseSelection'); // Navigate to ExerciseSelection
       })
       .catch(error => {
         const errorMessage = error.message;
