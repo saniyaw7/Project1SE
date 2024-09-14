@@ -32,7 +32,17 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Go to Ingredient Search</Text>
       </TouchableOpacity>
+
+      {/* Button to go to Equipment Search */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('EquipmentScreen')} // Add this for future use
+      >
+        <Text style={styles.buttonText}>Search by Equipment</Text>
+      </TouchableOpacity>
     </View>
+
+
   );
 };
 
