@@ -40,7 +40,23 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Search by Equipment</Text>
       </TouchableOpacity>
+
+      {/* Button to go to Muscle Search */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('MuscleScreen')} // Add this for future use
+      >
+        <Text style={styles.buttonText}>Search by Muscle</Text>
+      </TouchableOpacity>
+
+
+
+
+
+
+
     </View>
+
 
 
   );

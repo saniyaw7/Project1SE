@@ -14,6 +14,8 @@ import IngredientDetail from './components/IngredientDetail';
 import TestHomeScreen from './components/TestHomeScreen';
 import ExercisesScreen from './components/ExercisesScreen';
 import EquipmentScreen from './components/EquipmentScreen';
+import MuscleScreen from './components/MuscleScreen';
+import MuscleInfo from './components/MuscleInfo';
 
 const Stack = createStackNavigator();
 
@@ -31,6 +33,8 @@ export default function App() {
         <Stack.Screen name="TestHomeScreen"   component={TestHomeScreen}  /> 
         <Stack.Screen name="EquipmentScreen"  component={EquipmentScreen}/>
         <Stack.Screen name="ExercisesScreen"  component={ExercisesScreen}/>
+        <Stack.Screen name="MuscleScreen"     component={MuscleScreen}/>
+        <Stack.Screen name="MuscleInfo"       component={MuscleInfo}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
