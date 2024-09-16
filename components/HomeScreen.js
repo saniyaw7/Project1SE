@@ -1,53 +1,67 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { auth } from '../firebaseConfig'; // Import Firebase auth for getting user info
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { auth } from '../firebaseConfig';
+import { FontAwesome5, MaterialIcons, Ionicons } from '@expo/vector-icons'; // Import icons from Expo
 
 const HomeScreen = ({ navigation }) => {
   const [userEmail, setUserEmail] = useState('');
 
-  // Use useEffect to get the current user email once when the component mounts
   useEffect(() => {
     const currentUser = auth.currentUser;
     if (currentUser) {
       setUserEmail(currentUser.email);
     }
-  }, []); // Empty dependency array to run only once when the component mounts
+  }, []);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.welcomeText}>Welcome, {userEmail}!</Text>
+      {/* Welcome Section */}
+      <View style={styles.welcomeContainer}>
+        <Text style={styles.welcomeText}>Welcome back,</Text>
+        <Text style={styles.emailText}>{userEmail}</Text>
+      </View>
 
-      {/* Button to go to Exercise Selection */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('ExerciseSelection')}
-      >
-        <Text style={styles.buttonText}>Go to Exercise Selection</Text>
-      </TouchableOpacity>
+      {/* Workout Options Section */}
+      <View style={styles.sectionContainer}>
+        <Text style={styles.sectionTitle}>Workout Options</Text>
 
-      {/* Button to go to Ingredient Search */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('IngredientSearch')} // Add this for future use
-      >
-        <Text style={styles.buttonText}>Go to Ingredient Search</Text>
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.optionButton}
+          onPress={() => navigation.navigate('ExerciseSelection')}
+        >
+          <FontAwesome5 name="dumbbell" size={24} color="#fff" style={styles.icon} />
+          <Text style={styles.buttonText}>Exercise Selection</Text>
+        </TouchableOpacity>
 
-      {/* Button to go to Equipment Search */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('EquipmentScreen')} // Add this for future use
-      >
-        <Text style={styles.buttonText}>Search by Equipment</Text>
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.optionButton}
+          onPress={() => navigation.navigate('IngredientSearch')}
+        >
+          <MaterialIcons name="food-bank" size={24} color="#fff" style={styles.icon} />
+          <Text style={styles.buttonText}>Ingredient Search</Text>
+        </TouchableOpacity>
 
-      {/* Button to go to View Exercise Appointments */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('ViewExerciseAppointments')} // Add navigation for View Exercise Appointments
-      >
-        <Text style={styles.buttonText}>View Exercise Appointments</Text>
-      </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.optionButton}
+          onPress={() => navigation.navigate('EquipmentScreen')}
+        >
+          <Ionicons name="barbell" size={24} color="#fff" style={styles.icon} />
+          <Text style={styles.buttonText}>Search by Equipment</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Appointments Section */}
+      <View style={styles.sectionContainer}>
+        <Text style={styles.sectionTitle}>Your Appointments</Text>
+
+        <TouchableOpacity
+          style={styles.appointmentButton}
+          onPress={() => navigation.navigate('ViewExerciseAppointments')}
+        >
+          <Ionicons name="calendar" size={24} color="#fff" style={styles.icon} />
+          <Text style={styles.buttonText}>View Exercise Appointments</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -55,25 +69,59 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#f0f0f0',
     padding: 20,
+    justifyContent: 'center',
+  },
+  welcomeContainer: {
+    alignItems: 'center',
+    marginBottom: 30,
   },
   welcomeText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 40,
+    fontSize: 28,
+    fontWeight: '600',
+    color: '#333',
+  },
+  emailText: {
+    fontSize: 20,
     color: '#27ae60',
   },
-  button: {
+  sectionContainer: {
+    marginVertical: 20,
+  },
+  sectionTitle: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: 15,
+  },
+  optionButton: {
+    flexDirection: 'row',
     backgroundColor: '#2980B9',
     paddingVertical: 15,
-    paddingHorizontal: 30,
+    paddingHorizontal: 20,
     borderRadius: 10,
-    marginBottom: 20,
     alignItems: 'center',
-    width: '80%',
+    marginBottom: 15,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+  },
+  appointmentButton: {
+    flexDirection: 'row',
+    backgroundColor: '#27ae60',
+    paddingVertical: 15,
+    paddingHorizontal: 20,
+    borderRadius: 10,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+  },
+  icon: {
+    marginRight: 10,
   },
   buttonText: {
     color: '#fff',
