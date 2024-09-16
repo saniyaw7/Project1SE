@@ -40,9 +40,15 @@ const HomeScreen = ({ navigation }) => {
       >
         <Text style={styles.buttonText}>Search by Equipment</Text>
       </TouchableOpacity>
+
+      {/* Button to go to View Exercise Appointments */}
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('ViewExerciseAppointments')} // Add navigation for View Exercise Appointments
+      >
+        <Text style={styles.buttonText}>View Exercise Appointments</Text>
+      </TouchableOpacity>
     </View>
-
-
   );
 };
 
