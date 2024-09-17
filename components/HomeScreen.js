@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { auth } from '../firebaseConfig';
-import { FontAwesome5, MaterialIcons, Ionicons } from '@expo/vector-icons'; // Import icons from Expo
+import { FontAwesome5, MaterialIcons, Ionicons } from '@expo/vector-icons';
 
 const HomeScreen = ({ navigation }) => {
   const [userEmail, setUserEmail] = useState('');
@@ -47,6 +47,14 @@ const HomeScreen = ({ navigation }) => {
         >
           <Ionicons name="barbell" size={24} color="#fff" style={styles.icon} />
           <Text style={styles.buttonText}>Search by Equipment</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={styles.optionButton}
+          onPress={() => navigation.navigate('ViewAllComments')}
+        >
+          <Ionicons name="chatbox-ellipses" size={24} color="#fff" style={styles.icon} />
+          <Text style={styles.buttonText}>View All Comments</Text>
         </TouchableOpacity>
       </View>
 
