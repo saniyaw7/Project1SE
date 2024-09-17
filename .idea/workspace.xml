@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="368efe39-5919-4c17-82b2-c55cd98eb186" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EquipmentScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/EquipmentScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ExercisesScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ExercisesScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/TestHomeScreen.js" afterDir="false" />
-    </list>
+    <list default="true" id="67e0a72f-7a8e-41f4-b7ec-131f98b44ada" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +25,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2lo51EZVB7YHTvMaasE1zR4KGPI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
