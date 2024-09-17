@@ -22,6 +22,14 @@ const ExerciseSelection = ({ navigation }) => {
     }
   };
 
+  const handleViewComments = () => {
+    if (selectedExercise) {
+      navigation.navigate('ExerciseCommentScreen', { exercise: selectedExercise });
+    } else {
+      alert('Please select an exercise to view comments.');
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Select an Exercise</Text>
@@ -31,8 +39,15 @@ const ExerciseSelection = ({ navigation }) => {
         placeholder={{ label: "Choose an exercise", value: null }}
         style={pickerSelectStyles}
       />
+
+      {/* Button to navigate to Schedule Exercise */}
       <TouchableOpacity style={styles.button} onPress={handleSelectExercise}>
         <Text style={styles.buttonText}>Next</Text>
+      </TouchableOpacity>
+
+      {/* Button to navigate to Exercise Comments */}
+      <TouchableOpacity style={styles.commentButton} onPress={handleViewComments}>
+        <Text style={styles.buttonText}>View/Add Comments</Text>
       </TouchableOpacity>
     </View>
   );
@@ -55,6 +70,14 @@ const styles = StyleSheet.create({
   button: {
     marginTop: 20,
     backgroundColor: '#27ae60',
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  commentButton: {
+    marginTop: 20,
+    backgroundColor: '#2980B9',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 10,
@@ -93,3 +116,4 @@ const pickerSelectStyles = {
 };
 
 export default ExerciseSelection;
+
