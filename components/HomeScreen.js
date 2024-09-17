@@ -33,6 +33,14 @@ const HomeScreen = ({ navigation }) => {
           <Text style={styles.buttonText}>Exercise Selection</Text>
         </TouchableOpacity>
 
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('MuscleScreen')}
+      >
+        <Ionicons name="chatbox-ellipses" size={24} color="#fff" style={styles.icon} />
+          <Text style={styles.buttonText}>Search by Muscle</Text>
+        </TouchableOpacity>
+
         <TouchableOpacity
           style={styles.optionButton}
           onPress={() => navigation.navigate('IngredientSearch')}
@@ -61,7 +69,6 @@ const HomeScreen = ({ navigation }) => {
       {/* Appointments Section */}
       <View style={styles.sectionContainer}>
         <Text style={styles.sectionTitle}>Your Appointments</Text>
-
         <TouchableOpacity
           style={styles.appointmentButton}
           onPress={() => navigation.navigate('ViewExerciseAppointments')}

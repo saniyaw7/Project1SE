@@ -5,6 +5,7 @@ and if needed can add filters.
 import { useEffect, useState } from 'react';
 
 const useFetchData = (type, filter) => {
+    
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const API_KEY = '966ac55de3c816f715d15d864b887dcebf0f2626';
