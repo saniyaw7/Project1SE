@@ -33,11 +33,11 @@ const HomeScreen = ({ navigation }) => {
           <Text style={styles.buttonText}>Exercise Selection</Text>
         </TouchableOpacity>
 
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('MuscleScreen')}
-      >
-        <Ionicons name="chatbox-ellipses" size={24} color="#fff" style={styles.icon} />
+        <TouchableOpacity
+          style={styles.optionButton}
+          onPress={() => navigation.navigate('MuscleScreen')}
+        >
+          <FontAwesome5 name="dumbbell" size={24} color="#fff" style={styles.icon} />
           <Text style={styles.buttonText}>Search by Muscle</Text>
         </TouchableOpacity>
 
