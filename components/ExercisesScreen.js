@@ -1,15 +1,15 @@
 /*
 This screen shows the exercises that use the equipment chosen by the user in EquipmentScreen
 */
-import React, { useState, isLoading } from 'react';
-import { Button, StyleSheet, Text, View, ActivityIndicator, FlatList, useWindowDimensions  } from 'react-native';
+import React, { useState } from 'react';
+import { Button, StyleSheet, Text, View, ActivityIndicator, FlatList, useWindowDimensions } from 'react-native';
 import CheckBox from 'expo-checkbox';
 import RenderHtml from 'react-native-render-html';
 import useFetchData from './RestApi';
 
-const ExercisesScreen = ({route, navigation}) => {
+const ExercisesScreen = ({ route, navigation }) => {
   const { itemId } = route.params;
-  const {data} = useFetchData('exercise',`equipment=${itemId}`);
+  const { data, isLoading } = useFetchData('exercise', `equipment=${itemId}`);
   const [selectedItems, setSelectedItems] = useState({});
   const { width } = useWindowDimensions();
 
@@ -18,7 +18,7 @@ const ExercisesScreen = ({route, navigation}) => {
       ...prevSelectedItems,
       [id]: !prevSelectedItems[id],
     }));
-  }
+  };
 
   return (
     <View style={styles.container}>
@@ -35,34 +35,27 @@ const ExercisesScreen = ({route, navigation}) => {
           keyExtractor={({ id }) => id.toString()}
           renderItem={({ item }) => (
             <View style={styles.container}>
-                <View style={styles.itemContainer}>
-                    <CheckBox
-                        value={selectedItems[item.uuid] || false}
-                        onValueChange={() => handleCheckBoxChange(item.uuid)}
-                    />
-                    <Text style={styles.itemName}>{item.name}</Text>
-                </View>
-                <View style={styles.textContainer}>
-                  <RenderHtml
-                    contentWidth={width - 60}
-                    source={{ html: item.description }}
-                  />
-                </View>
+              <View style={styles.itemContainer}>
+                <CheckBox
+                  value={selectedItems[item.uuid] || false}
+                  onValueChange={() => handleCheckBoxChange(item.uuid)}
+                />
+                <Text style={styles.itemName}>{item.name}</Text>
               </View>
+              <View style={styles.textContainer}>
+                <RenderHtml contentWidth={width - 60} source={{ html: item.description }} />
+              </View>
+            </View>
           )}
         />
       )}
 
-      <Text>Save</Text>
-      <Button
-        title='Save'
-        onPress={() => navigation.navigate("TestHomeScreen")}
-      />
+      <Button title="Save" onPress={() => navigation.navigate('TestHomeScreen')} />
     </View>
-    )
-}
+  );
+};
 
-export default ExercisesScreen
+export default ExercisesScreen;
 
 const styles = StyleSheet.create({
   container: {

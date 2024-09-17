@@ -1,13 +1,38 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const ScheduleExercise = ({ route, navigation }) => {
-  const { exercise } = route.params; // Get selected exercise from params
+  const { exercise } = route.params;
   const [date, setDate] = useState(new Date());
   const [time, setTime] = useState(new Date());
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [showTimePicker, setShowTimePicker] = useState(false);
+
+  // Function to save exercise data to AsyncStorage
+  const saveExerciseData = async (exercise, date, time) => {
+    try {
+      const exerciseData = {
+        exercise: exercise.name,
+        date: date.toDateString(),
+        time: time.toLocaleTimeString(),
+      };
+
+      // Retrieve existing data
+      const existingData = await AsyncStorage.getItem('@exercise_data');
+      const parsedData = existingData ? JSON.parse(existingData) : [];
+
+      // Add new exercise data
+      parsedData.push(exerciseData);
+
+      // Save the updated list
+      await AsyncStorage.setItem('@exercise_data', JSON.stringify(parsedData));
+      console.log('Exercise data saved successfully');
+    } catch (error) {
+      console.error('Error saving exercise data:', error);
+    }
+  };
 
   const handleDateChange = (event, selectedDate) => {
     const currentDate = selectedDate || date;
@@ -22,11 +47,12 @@ const ScheduleExercise = ({ route, navigation }) => {
   };
 
   const handleSchedule = () => {
+    saveExerciseData(exercise, date, time);
     Alert.alert(
       'Success',
       `Exercise scheduled for ${exercise.name} on ${date.toDateString()} at ${time.toLocaleTimeString()}`,
     );
-    navigation.goBack(); // Go back to the previous screen after scheduling
+    navigation.goBack();
   };
 
   return (
@@ -122,3 +148,4 @@ const styles = StyleSheet.create({
 });
 
 export default ScheduleExercise;
+
