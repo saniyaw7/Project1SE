@@ -19,9 +19,34 @@ const ExerciseCommentScreen = ({ route, navigation }) => {
     loadComments();
   }, []);
 
-  // Save comments to AsyncStorage
-  const saveComments = async (updatedComments) => {
+  // Save comments to AsyncStorage (for both specific exercise and global)
+  const saveComments = async (updatedComments, type) => {
     await AsyncStorage.setItem(`@comments_${exercise.name}`, JSON.stringify(updatedComments));
+
+    // Update the global comments key as well
+    const globalComments = await AsyncStorage.getItem('@exercise_comments');
+    let parsedGlobalComments = globalComments ? JSON.parse(globalComments) : [];
+
+    if (type === 'add') {
+      const newGlobalComment = {
+        exercise: exercise.name,
+        comment: newComment,
+        upvotes: 0,
+        downvotes: 0,
+        date: new Date().toISOString(),
+      };
+
+      parsedGlobalComments.push(newGlobalComment);
+    } else {
+      // Update global comments for vote changes
+      parsedGlobalComments = parsedGlobalComments.map((globalComment) =>
+        globalComment.exercise === exercise.name && globalComment.comment === updatedComments[type].text
+          ? { ...globalComment, upvotes: updatedComments[type].upvotes, downvotes: updatedComments[type].downvotes }
+          : globalComment
+      );
+    }
+
+    await AsyncStorage.setItem('@exercise_comments', JSON.stringify(parsedGlobalComments));
   };
 
   // Handle adding a new comment
@@ -29,7 +54,7 @@ const ExerciseCommentScreen = ({ route, navigation }) => {
     if (newComment.trim() !== '') {
       const updatedComments = [...comments, { text: newComment, upvotes: 0, downvotes: 0 }];
       setComments(updatedComments);
-      saveComments(updatedComments);
+      saveComments(updatedComments, 'add'); // Pass 'add' to identify that we're adding a new comment
       setNewComment('');
     }
   };
@@ -43,7 +68,7 @@ const ExerciseCommentScreen = ({ route, navigation }) => {
       updatedComments[index].downvotes += 1;
     }
     setComments(updatedComments);
-    saveComments(updatedComments);
+    saveComments(updatedComments, index); // Pass the index to identify which comment is being voted
   };
 
   return (
