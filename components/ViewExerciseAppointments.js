@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, FlatList, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import DateTimePicker from '@react-native-community/datetimepicker'; // Import DateTimePicker for editing
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 const ViewExerciseAppointments = () => {
   const [appointments, setAppointments] = useState([]);
@@ -11,7 +11,7 @@ const ViewExerciseAppointments = () => {
   const [showDatePicker, setShowDatePicker] = useState(false);
   const [showTimePicker, setShowTimePicker] = useState(false);
 
-  // Function to fetch saved exercises from AsyncStorage
+  // Fetch saved exercises from AsyncStorage
   const fetchAppointments = async () => {
     try {
       const jsonValue = await AsyncStorage.getItem('@exercise_data');
@@ -28,7 +28,7 @@ const ViewExerciseAppointments = () => {
     fetchAppointments();
   }, []);
 
-  // Function to delete an exercise from the list
+  // Delete an exercise from the list
   const handleDelete = async (index) => {
     const updatedAppointments = [...appointments];
     updatedAppointments.splice(index, 1);
@@ -37,34 +37,50 @@ const ViewExerciseAppointments = () => {
     Alert.alert('Success', 'Exercise deleted successfully.');
   };
 
-  // Function to open the date picker for editing
+  // Open the date picker for editing
   const handleEdit = (index) => {
     setEditIndex(index);
+    setEditDate(new Date(appointments[index].date)); // Ensure date is passed correctly
+    // Parse the time string correctly before passing it to Date object
+    const timeParts = appointments[index].time.split(':');
+    const hours = parseInt(timeParts[0]);
+    const minutes = parseInt(timeParts[1].split(' ')[0]);
+    const isPM = timeParts[1].includes('PM');
+    let parsedHours = hours;
+    if (isPM && hours < 12) parsedHours = hours + 12;
+    if (!isPM && hours === 12) parsedHours = 0;
+
+    const currentTime = new Date();
+    currentTime.setHours(parsedHours);
+    currentTime.setMinutes(minutes);
+    setEditTime(currentTime); // Pass time in correct format
     setShowDatePicker(true); // Start by opening the date picker
   };
 
-  // Function to handle the date change
+  // Handle the date change
   const handleDateChange = (event, selectedDate) => {
-    const currentDate = selectedDate || editDate;
-    setShowDatePicker(false);
-    setEditDate(currentDate);
-    setShowTimePicker(true); // Open the time picker after selecting the date
+    if (selectedDate !== undefined) {
+      setEditDate(selectedDate);
+    }
+    setShowDatePicker(false); // Close date picker after selection
+    setShowTimePicker(true); // Open time picker after date selection
   };
 
-  // Function to handle the time change
+  // Handle the time change
   const handleTimeChange = (event, selectedTime) => {
-    const currentTime = selectedTime || editTime;
-    setShowTimePicker(false);
-    setEditTime(currentTime);
-    updateAppointment();
+    if (selectedTime !== undefined) {
+      setEditTime(selectedTime);
+    }
+    setShowTimePicker(false); // Close time picker after selection
+    updateAppointment(); // Update the appointment after both date and time are selected
   };
 
-  // Function to update the selected exercise appointment
+  // Update the selected exercise appointment
   const updateAppointment = async () => {
     if (editIndex !== null) {
       const updatedAppointments = [...appointments];
-      updatedAppointments[editIndex].date = editDate.toDateString();
-      updatedAppointments[editIndex].time = editTime.toLocaleTimeString();
+      updatedAppointments[editIndex].date = editDate.toDateString(); // Update date
+      updatedAppointments[editIndex].time = editTime.toLocaleTimeString(); // Update time
       setAppointments(updatedAppointments);
       await AsyncStorage.setItem('@exercise_data', JSON.stringify(updatedAppointments));
       Alert.alert('Success', 'Exercise appointment updated successfully.');
@@ -75,21 +91,26 @@ const ViewExerciseAppointments = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Your Appointments</Text>
-      <FlatList
-        data={appointments}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item, index }) => (
-          <View style={styles.appointmentItem}>
-            <Text>{item.exercise} - {item.date} at {item.time}</Text>
-            <TouchableOpacity style={styles.editButton} onPress={() => handleEdit(index)}>
-              <Text style={styles.buttonText}>Edit</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.deleteButton} onPress={() => handleDelete(index)}>
-              <Text style={styles.buttonText}>Delete</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-      />
+
+      {appointments.length === 0 ? (
+        <Text style={styles.noAppointmentsText}>No appointments found. Please schedule an exercise.</Text>
+      ) : (
+        <FlatList
+          data={appointments}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item, index }) => (
+            <View style={styles.appointmentItem}>
+              <Text>{item.exercise} - {item.date} at {item.time}</Text>
+              <TouchableOpacity style={styles.editButton} onPress={() => handleEdit(index)}>
+                <Text style={styles.buttonText}>Edit</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.deleteButton} onPress={() => handleDelete(index)}>
+                <Text style={styles.buttonText}>Delete</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        />
+      )}
 
       {/* DateTime Pickers for Editing */}
       {showDatePicker && (
@@ -122,6 +143,12 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+  },
+  noAppointmentsText: {
+    fontSize: 18,
+    textAlign: 'center',
+    color: '#888',
+    marginTop: 20,
   },
   appointmentItem: {
     padding: 10,
