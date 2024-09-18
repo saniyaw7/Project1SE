@@ -91,21 +91,26 @@ const ViewExerciseAppointments = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Your Appointments</Text>
-      <FlatList
-        data={appointments}
-        keyExtractor={(item, index) => index.toString()}
-        renderItem={({ item, index }) => (
-          <View style={styles.appointmentItem}>
-            <Text>{item.exercise} - {item.date} at {item.time}</Text>
-            <TouchableOpacity style={styles.editButton} onPress={() => handleEdit(index)}>
-              <Text style={styles.buttonText}>Edit</Text>
-            </TouchableOpacity>
-            <TouchableOpacity style={styles.deleteButton} onPress={() => handleDelete(index)}>
-              <Text style={styles.buttonText}>Delete</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-      />
+
+      {appointments.length === 0 ? (
+        <Text style={styles.noAppointmentsText}>No appointments found. Please schedule an exercise.</Text>
+      ) : (
+        <FlatList
+          data={appointments}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item, index }) => (
+            <View style={styles.appointmentItem}>
+              <Text>{item.exercise} - {item.date} at {item.time}</Text>
+              <TouchableOpacity style={styles.editButton} onPress={() => handleEdit(index)}>
+                <Text style={styles.buttonText}>Edit</Text>
+              </TouchableOpacity>
+              <TouchableOpacity style={styles.deleteButton} onPress={() => handleDelete(index)}>
+                <Text style={styles.buttonText}>Delete</Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        />
+      )}
 
       {/* DateTime Pickers for Editing */}
       {showDatePicker && (
@@ -138,6 +143,12 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 20,
+  },
+  noAppointmentsText: {
+    fontSize: 18,
+    textAlign: 'center',
+    color: '#888',
+    marginTop: 20,
   },
   appointmentItem: {
     padding: 10,
