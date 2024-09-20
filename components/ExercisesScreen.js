@@ -1,24 +1,15 @@
 /*
 This screen shows the exercises that use the equipment chosen by the user in EquipmentScreen
 */
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, StyleSheet, Text, View, ActivityIndicator, FlatList, useWindowDimensions } from 'react-native';
-import CheckBox from 'expo-checkbox';
 import RenderHtml from 'react-native-render-html';
 import useFetchData from './RestApi';
 
 const ExercisesScreen = ({ route, navigation }) => {
   const { itemId } = route.params;
   const { data, isLoading } = useFetchData('exercise', `equipment=${itemId}`);
-  const [selectedItems, setSelectedItems] = useState({});
   const { width } = useWindowDimensions();
-
-  const handleCheckBoxChange = (id) => {
-    setSelectedItems((prevSelectedItems) => ({
-      ...prevSelectedItems,
-      [id]: !prevSelectedItems[id],
-    }));
-  };
 
   return (
     <View style={styles.container}>
@@ -36,10 +27,6 @@ const ExercisesScreen = ({ route, navigation }) => {
           renderItem={({ item }) => (
             <View style={styles.container}>
               <View style={styles.itemContainer}>
-                <CheckBox
-                  value={selectedItems[item.uuid] || false}
-                  onValueChange={() => handleCheckBoxChange(item.uuid)}
-                />
                 <Text style={styles.itemName}>{item.name}</Text>
               </View>
               <View style={styles.textContainer}>
@@ -50,7 +37,7 @@ const ExercisesScreen = ({ route, navigation }) => {
         />
       )}
 
-      <Button title="Save" onPress={() => navigation.navigate('TestHomeScreen')} />
+      <Button title="Home" onPress={() => navigation.navigate('Home')} />
     </View>
   );
 };
