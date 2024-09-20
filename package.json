@@ -60,7 +60,7 @@
       "<rootDir>/__mocks__/@react-native-async-storage/async-storage.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@react-native|@react-native-async-storage|@react-navigation|@react-native-community)/)"
+      "node_modules/(?!(react-native|@react-native|@react-native-async-storage|@react-navigation|@react-native-community|firebase|@firebase)/)"
     ]
   },
   "private": true
