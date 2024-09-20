@@ -1,7 +1,44 @@
-# Project 01 Retrospective and overview
+# Project 01 Retrospective and Overview
 
 ## Overview
-The workout API that we use can be found [here](https://wger.de/en/software/api)
+
+The fitness app integrates multiple functionalities to provide users with a comprehensive platform for managing workouts, viewing exercise information, and tracking nutritional intake. The app uses the [WGER API](https://wger.de/en/software/api) for exercise and nutrition data, and it features Firebase Authentication for user registration and login.
+
+### Key Features and Activities:
+1. **Ingredient Search (IngredientSearch.js)**:
+   - Users can search for ingredients using the WGER API and view detailed nutritional information, including calories, protein, fat, and carbohydrates.
+2. **Exercise Information and Search**:
+   - **MuscleScreen.js**: Displays exercises filtered by muscle groups.
+   - **EquipmentScreen.js**: Displays exercises based on available equipment.
+   - **ExerciseScreen.js**: A general screen for displaying a list of exercises.
+   - **MuscleInfo.js**: Provides information about the muscles targeted by specific exercises.
+   - **RestApi.js**: Handles API calls related to exercises and nutritional data.
+3. **Exercise Selection and Scheduling**:
+   - **ExerciseSelection.js**: Allows users to choose exercises and add them to their workout list.
+   - **ScheduleExercise.js**: Enables users to schedule selected exercises with a date and time.
+   - **ViewExerciseAppointments.js**: Displays a list of scheduled exercises, allowing users to view and manage their workout appointments.
+4. **Comments on Exercises**:
+   - **ExerciseCommentScreen.js**: Allows users to add, view, and upvote/downvote comments on exercises.
+   - **ViewAllComments.js**: Displays all comments related to an exercise, with sorting options for most recent or most upvoted comments.
+5. **User Authentication and Registration**:
+   - **LoginScreen.js**: Allows users to log into their account using Firebase Authentication.
+   - **RegisterScreen.js**: Allows new users to register and create accounts.
+   - **WelcomeMessage.js**: A custom welcome message that enhances the user experience on the login and registration screens.
+
+6. **Home and Navigation**:
+   - **HomeScreen.js**: Acts as the main landing page after login, allowing users to navigate to different features like exercise search and scheduling.
+7. **Logo and Branding**:
+   - **Logo.js**: A reusable logo component used across multiple screens to maintain branding consistency.
+8. **Exercise Details**:
+   - **IngredientDetail.js**: Shows detailed nutritional information for a selected ingredient.
+
+### Summary of App Flow:
+- **Login & Registration**: Users authenticate using Firebase, and new users can register directly within the app.
+- **Exercise and Ingredient Search**: Users can search for exercises by muscle group or equipment and search for ingredients to view their nutritional information.
+- **Exercise Scheduling**: Users can select and schedule exercises, which are saved and managed using AsyncStorage.
+- **Comments**: Users can interact with other users' exercise comments, adding their own or voting on existing ones.
+- **Home & Navigation**: The app provides an intuitive navigation flow, with a consistent logo and user-friendly layout.
+
 
 
 
@@ -79,6 +116,9 @@ The most valuable thing I learned was how to manage persistent storage in React 
 
 
 ## Conclusion
-- How successful was the project?
-- What was the largest victory?
-- Final assessment of the project
+- **How successful was the project?**
+  The project was successful in creating a functional fitness app with multiple integrated features, including exercise scheduling, commenting, ingredient searches, and user authentication. The app's robust design allowed users to manage and schedule workouts effectively while providing valuable nutritional information.
+- **What was the largest victory?**
+  The largest victory was the seamless integration of exercise scheduling, user authentication, and comments, which allowed users to not only manage their workouts but also engage with the fitness community through feedback and discussions on exercises.
+- **Final assessment of the project**:
+  The final product provides a solid user experience with many useful features. While the app effectively uses React Native, AsyncStorage, and Firebase, improvements could be made in optimizing the state management and enhancing performance. Overall, it meets the goals set out and provides a scalable solution for users to track workouts and nutritional data.
