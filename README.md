@@ -108,11 +108,19 @@ The most valuable thing I learned was how to manage persistent storage in React 
 1. Saniya's pull requests are [here]()
 2. Saniya's github issues are [here]()
 ### What was your role / which stories did you work on
+I tried working on the database but could not complete my assigned task due to unknow errors in Android Studio and Visual Studio Code
 - What was the biggest challenge?
+  I woukd say the "biggest challenge" I faced till the end was getting Android Studio/Visual Studio Code running/ The environment for the Android Studio.
 - Why was it a challenge?
+  It threw the randommest error to me because of whch I could get the code running on my laptop still the end to complete my assigned task (database). I did try to research and solve the errors my myslef but it seemed like ni ine was fimilar with the    
+  issue. There was a point I was repeating the steps over and over but the results were the same. Also I did attend the office hours and asked help to the professor but non seem to work.
 - Favorite / most interesting part of this project
+  When the API worked (specificly the Search engine)
 - If you could do it over, what would you change?
+  Would write the code in java instead of java script.
 - What is the most valuable thing you learned?
+  DO NOT GIVE UP. keep trying till the very end
+  
 
 
 ## Conclusion
