@@ -1,4 +1,6 @@
 # Project 01 Retrospective and Overview
+- [repo](https://github.com/saniyaw7/Project1SE)
+- [video](https://www.youtube.com/watch?v=nKfsqwLztiM)
 
 ## Overview
 
@@ -69,14 +71,20 @@ My role was integrator, but there wasn't as many pull requests as we had hoped. 
   - The most valuable thing that I learned was how to use Github and the terminal as they are vital.
 
 ### Alvaro De La Cruz
-1. Alvaro's pull requests are [here]()
-2. Alvaro's github issues are [here]()
+1. Alvaro's pull requests are [here](https://github.com/saniyaw7/Project1SE/pulls?q=is%3Apr+author%3AAlvaro-DLC+is%3Aclosed)
+2. Alvaro's github issues are [here](https://github.com/saniyaw7/Project1SE/issues/created_by/Alvaro-DLC)
 ### What was your role / which stories did you work on
+I worked on a searching filter for the api where the user would be able to select an equipment and display the exercises liked to it.
 - What was the biggest challenge?
+  The biggest challenge would be getting the enviroment of the app to run.
 - Why was it a challenge?
+  we had all things set up but the enviroment wouldn't work so we had to switch app templates to get it working 
 - Favorite / most interesting part of this project
+  working with the APi was the most intersting part for me
 - If you could do it over, what would you change?
+  I would change the initial template for the app that we used and done more reasearch on it to see what was the issue.
 - What is the most valuable thing you learned?
+  Communication and having your set up correct is important when working on a project.
 
 ### Peter Mitchell
 
