@@ -105,8 +105,8 @@ The most valuable thing I learned was how to manage persistent storage in React 
 
 
 ### Saniya Wairkar
-1. Saniya's pull requests are [here]()
-2. Saniya's github issues are [here]()
+1. Saniya's pull requests are [here](https://github.com/saniyaw7/Project1SE/pulls)
+2. Saniya's github issues are [here](https://github.com/saniyaw7/Project1SE/issues?q=is%3Aissue+author%3Asaniyaw7+is%3Aclosed)
 ### What was your role / which stories did you work on
 I tried working on the database but could not complete my assigned task due to unknow errors in Android Studio and Visual Studio Code
 - What was the biggest challenge?
